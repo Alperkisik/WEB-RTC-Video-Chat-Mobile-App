@@ -1,0 +1,23 @@
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+    height: 100vh;
+}
+
+/* Your app custom styles here */
+
+.time-section {
+    height: 50px;
+    border: 1px solid black;
+}
+
+.btn-section {
+    border: 1px solid black;
+}
+
+.cam {
+    min-height: 300px;
+    border: 1px solid rgba(169, 169, 169, 0.356);
+    width: 100%;
+    background-color: darkgray;
+    border-radius: 12px;
+}

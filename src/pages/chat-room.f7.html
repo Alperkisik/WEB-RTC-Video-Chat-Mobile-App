@@ -1,0 +1,62 @@
+<template>
+    <div class="page" data-name="chatroom">
+        <!-- Top Navbar -->
+        <div class="navbar navbar-large">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only panel-open" data-panel="left">
+                        <i class="icon f7-icons if-not-md">menu</i>
+                        <i class="icon material-icons if-md">menu</i>
+                    </a>
+                </div>
+                <div class="title sliding">Video Chat app</div>
+                <div class="right">
+                    <a href="#" class="link icon-only panel-open" data-panel="right">
+                        <i class="icon f7-icons if-not-md">menu</i>
+                        <i class="icon material-icons if-md">menu</i>
+                    </a>
+                </div>
+                <div class="title-large">
+                    <div class="title-large-text">Video Chat app</div>
+                </div>
+            </div>
+        </div>
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="time-section margin padding">
+                <p id="local-id"></p>
+            </div>
+            <div class="cam-section margin">
+                <video class="cam margin-bottom" id="local-cam"></video>
+                <video class="cam" id="remote-cam"></video>
+            </div>
+            <div class="btn-section margin padding">
+                <button class="button button-fill color-green" id="open-cam">Bağlantı Oluştur</button>
+                <div class="list inline-labels no-hairlines-md">
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-media">
+                                <i class="icon demo-list-icon"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title item-label">id</div>
+                                <div class="item-input-wrap">
+                                    <input type="text" id="call-id" />
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="button button-fill margin-bottom" id="connect">katıl</button>
+                <button class="button button-fill color-red" id="close-call">Aramadan Çık</button>
+            </div>
+        </div>
+    </div>
+</template>
+<script>
+    export default () => {
+        return $render;
+    };
+</script>
